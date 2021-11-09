@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>OTRSCloneDB</Name>
-    <Version>6.1.1</Version>
+    <Version>6.2.1</Version>
+    <ChangeLog Version="6.2.1" Date="2021-11-09 11:00:24 +0100">Ported to 6.2</ChangeLog>
     <Framework>6.1.x</Framework>
     <Vendor>Znuny</Vendor>
     <URL>https://www.znuny.org/</URL>
