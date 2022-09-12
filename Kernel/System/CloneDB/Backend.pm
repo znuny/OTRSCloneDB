@@ -6,7 +6,6 @@
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
-
 package Kernel::System::CloneDB::Backend;
 
 use strict;
@@ -60,7 +59,7 @@ sub new {
     # get config object
     my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
 
-    # OTRS stores binary data in some columns. On some database systems,
+    # Znuny stores binary data in some columns. On some database systems,
     #   these are handled differently (data is converted to base64-encoding before
     #   it is stored. Here is the list of these columns which need special treatment.
     $Self->{BlobColumns}          = $ConfigObject->Get('CloneDB::BlobColumns');
@@ -70,7 +69,7 @@ sub new {
     my $MainObject = $Kernel::OM->Get('Kernel::System::Main');
 
     # create all registered backend modules
-    for my $DBType (qw(mssql mysql oracle postgresql)) {
+    for my $DBType (qw(mysql oracle postgresql)) {
 
         my $BackendModule = 'Kernel::System::CloneDB::Driver::' . $DBType;
 
@@ -289,13 +288,21 @@ sub _GenerateTargetStructuresSQL {
         return;
     }
 
-    $Self->PrintWithTime("Generating DDL for OTRS.\n");
+    $Self->PrintWithTime("Generating DDL for Znuny.\n");
 
     # SourceDBObject get data
     my $SQLDirectory = $Kernel::OM->Get('Kernel::Config')->Get('Home') . '/scripts/database';
 
-    if ( !-f "$SQLDirectory/otrs-schema.xml" ) {
-        die "SQL directory $SQLDirectory not found.";
+    my $SchemaFile;
+    if ( -f "$SQLDirectory/otrs-schema.xml" ) {
+        $SchemaFile = 'otrs-schema.xml';
+    }
+    elsif ( -f "$SQLDirectory/schema.xml" ) {
+        $SchemaFile = 'schema.xml';
+    }
+
+    if ( !$SchemaFile ) {
+        die "File $SQLDirectory/$SchemaFile not found.";
     }
 
     # keep next lines here due this time we need the source db object
@@ -321,7 +328,7 @@ sub _GenerateTargetStructuresSQL {
     # get XML structure
     my $XML = $Kernel::OM->Get('Kernel::System::Main')->FileRead(
         Directory => $SQLDirectory,
-        Filename  => 'otrs-schema.xml',
+        Filename  => $SchemaFile,
     );
     my @XMLArray = $XMLObject->XMLParse(
         String => $XML,

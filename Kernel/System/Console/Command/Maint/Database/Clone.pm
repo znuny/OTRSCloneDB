@@ -6,7 +6,6 @@
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
-
 package Kernel::System::Console::Command::Maint::Database::Clone;
 
 use strict;
@@ -24,7 +23,7 @@ sub Configure {
     my ( $Self, %Param ) = @_;
 
     my $Description = <<EOF;
-This script clones an OTRS database into an empty target database, even
+This script clones a Znuny database into an empty target database, even
 on another database platform. It will dynamically get the list of tables in the
 source DB, and copy the data of each table to the target DB.
 Please note that you first need to configure the target database via SysConfig.

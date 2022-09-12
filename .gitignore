@@ -8,7 +8,7 @@
 *.swo
 *~
 
-# OTRS
+# Znuny
 doc/manual/en
 Kernel/Config/Files/ZZZ*.pm
 Kernel/Config/GenericAgent.pm
@@ -65,11 +65,11 @@ Kernel/Language/*_Support.pm
 Kernel/System/Support
 var/httpd/htdocs/skins/Agent/default/css/Support.Default.css
 
-# OTRSCodePolicy
+# ZnunyCodePolicy
 .tidyall.d
 Perl/Critic
 TidyAll
-scripts/test/OTRSCodePolicy.t
+scripts/test/ZnunyCodePolicy.t
 
 # ITSM
 var/stats/*.xml.installed

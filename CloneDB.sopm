@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<otrs_package version="1.0">
+<!-- nofilter(TidyAll::Plugin::Znuny4OTRS::SOPM::License) -->
+    <Name>CloneDB</Name>
+    <Version>6.4.1</Version>
+    <Framework>6.4.x</Framework>
+    <Vendor>Znuny GmbH</Vendor>
+    <URL>https://www.znuny.org/</URL>
+    <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
+    <Description Lang="en">Clones a Znuny database into an empty target database.</Description>
+    <Description Lang="de">Klont eine Znuny-Datenbank in eine leere Ziel-Datenbank.</Description>
+    <!--
+        Note for module porting: please verify that the mysql UTF8 replacement in Base.pm
+        is still needed in future versions of Znuny.
+
+        Quote:
+        Replace any unicode characters that need more then three bytes in UTF8
+        with the unicode replacement character. MySQL's utf8 encoding only
+        supports three bytes. In future we might want to use utf8mb4 (supported
+        since 5.5.3+).
+        See also http://mathiasbynens.be/notes/mysql-utf8mb4.
+    -->
+    <ChangeLog Version="6.4.1" Date="2022-07-29 09:19:33 +0200">Initial release for Znuny 6.4.</ChangeLog>
+    <ChangeLog Version="6.3.1" Date="2022-03-31 19:19:34 +0200">Ported to 6.3</ChangeLog>
+    <ChangeLog Version="6.2.1" Date="2021-11-09 11:00:24 +0100">Ported to 6.2</ChangeLog>
+    <Filelist>
+        <File Permission="660" Location="Kernel/Config/Files/XML/CloneDB.xml"/>
+        <File Permission="660" Location="Kernel/Language/bg_CloneDB.pm"/>
+        <File Permission="660" Location="Kernel/Language/de_CloneDB.pm"/>
+        <File Permission="660" Location="Kernel/Language/es_MX_CloneDB.pm"/>
+        <File Permission="660" Location="Kernel/Language/es_CloneDB.pm"/>
+        <File Permission="660" Location="Kernel/Language/hu_CloneDB.pm"/>
+        <File Permission="660" Location="Kernel/Language/it_CloneDB.pm"/>
+        <File Permission="660" Location="Kernel/Language/ja_CloneDB.pm"/>
+        <File Permission="660" Location="Kernel/Language/nb_NO_CloneDB.pm"/>
+        <File Permission="660" Location="Kernel/Language/pl_CloneDB.pm"/>
+        <File Permission="660" Location="Kernel/Language/pt_BR_CloneDB.pm"/>
+        <File Permission="660" Location="Kernel/Language/pt_CloneDB.pm"/>
+        <File Permission="660" Location="Kernel/Language/ru_CloneDB.pm"/>
+        <File Permission="660" Location="Kernel/Language/sr_Cyrl_CloneDB.pm"/>
+        <File Permission="660" Location="Kernel/Language/sr_Latn_CloneDB.pm"/>
+        <File Permission="660" Location="Kernel/Language/zh_CN_CloneDB.pm"/>
+        <File Permission="660" Location="Kernel/Language/zh_TW_CloneDB.pm"/>
+        <File Permission="660" Location="Kernel/System/CloneDB/Backend.pm"/>
+        <File Permission="660" Location="Kernel/System/CloneDB/Driver/Base.pm"/>
+        <File Permission="660" Location="Kernel/System/CloneDB/Driver/mysql.pm"/>
+        <File Permission="660" Location="Kernel/System/CloneDB/Driver/postgresql.pm"/>
+        <File Permission="660" Location="Kernel/System/CloneDB/Driver/oracle.pm"/>
+        <File Permission="660" Location="Kernel/System/Console/Command/Maint/Database/Clone.pm"/>
+        <File Permission="660" Location="scripts/test/Console/Command/Maint/Database/Clone.t"/>
+    </Filelist>
+    <IntroInstall Type="pre" Title="Install Information" Lang="en"><![CDATA[
+
+        <br/>
+        <strong>WELCOME</strong>
+        <br/>
+        <br/>
+        You are about to install the package CloneDB.<br/>
+        <br/>
+        <br/>
+        ((enjoy))<br/>
+        <br/>
+
+    ]]></IntroInstall>
+    <IntroInstall Type="pre" Title="Installation Information" Lang="de"><![CDATA[
+
+        <br/>
+        <strong>WILLKOMMEN</strong>
+        <br/>
+        <br/>
+        Sie sind dabei, das Paket CloneDB zu installieren.<br/>
+        <br/>
+        <br/>
+        ((enjoy))<br/>
+        <br/>
+
+    ]]></IntroInstall>
+    <IntroInstall Type="pre" Title="Telepítési információk" Lang="hu"><![CDATA[
+
+        <br/>
+        <strong>ÜDVÖZÖLJÜK</strong>
+        <br/>
+        <br/>
+        Ön az CloneDB csomag telepítésére készül.<br/>
+        <br/>
+        <br/>
+        ((enjoy))<br/>
+        <br/>
+
+    ]]></IntroInstall>
+    <IntroUpgrade Type="pre" Title="Upgrade Information" Lang="en"><![CDATA[
+
+        <br/>
+        <strong>WELCOME</strong>
+        <br/>
+        <br/>
+        You are about to upgrade the package CloneDB.<br/>
+        <br/>
+        <br/>
+        ((enjoy))<br/>
+        <br/>
+
+    ]]></IntroUpgrade>
+    <IntroUpgrade Type="pre" Title="Upgrade Information" Lang="de"><![CDATA[
+
+        <br/>
+        <strong>WILLKOMMEN</strong>
+        <br/>
+        <br/>
+        Sie sind dabei, das Paket CloneDB zu aktualisieren.<br/>
+        <br/>
+        <br/>
+        ((enjoy))<br/>
+        <br/>
+
+    ]]></IntroUpgrade>
+    <IntroUpgrade Type="pre" Title="Frissítési információk" Lang="hu"><![CDATA[
+
+        <br/>
+        <strong>ÜDVÖZÖLJÜK</strong>
+        <br/>
+        <br/>
+        Ön az CloneDB csomag frissítésére készül.<br/>
+        <br/>
+        <br/>
+        ((enjoy))<br/>
+        <br/>
+
+    ]]></IntroUpgrade>
+    <PackageMerge Name="CloneDB" TargetVersion="6.4.2"/>
+</otrs_package>
