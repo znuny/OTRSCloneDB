@@ -3,7 +3,7 @@
 <!-- nofilter(TidyAll::Plugin::Znuny4OTRS::SOPM::License) -->
     <Name>CloneDB</Name>
     <Version>6.4.1</Version>
-    <Framework>6.4.x</Framework>
+    <Framework>6.5.x</Framework>
     <Vendor>Znuny GmbH</Vendor>
     <URL>https://www.znuny.org/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
