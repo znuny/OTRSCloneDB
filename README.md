@@ -1,8 +1,8 @@
 ![Znuny logo](https://www.znuny.com/assets/images/logo_small.png)
 
 
-OTRSCloneDB
-===========
+CloneDB
+=======
 
 This add-on clones the application database into another, empty database. It can be used to change the used DBMS for Znuny.
 
@@ -12,10 +12,9 @@ This add-on clones the application database into another, empty database. It can
 
 **Installation**
 
-
 Use the online repository **Freebie feature** from the package manager to install the add-on.
 From the command line use this command:
-`bin/otrs.Console.pl Admin::Package::Install https://download.znuny.org/releases/packages/:OTRSCloneDB`
+`bin/otrs.Console.pl Admin::Package::Install https://download.znuny.org/releases/packages/:CloneDB`
 
 **Configuration**
 
