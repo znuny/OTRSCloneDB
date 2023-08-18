@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
-<!-- nofilter(TidyAll::Plugin::Znuny4OTRS::SOPM::License) -->
     <Name>CloneDB</Name>
     <Version>6.5.1</Version>
-    <Framework>6.5.x</Framework>
+    <Framework>7.0.x</Framework>
     <Vendor>Znuny GmbH</Vendor>
     <URL>https://www.znuny.org/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
@@ -59,8 +58,6 @@
         You are about to install the package CloneDB.<br/>
         <br/>
         <br/>
-        ((enjoy))<br/>
-        <br/>
 
     ]]></IntroInstall>
     <IntroInstall Type="pre" Title="Installation Information" Lang="de"><![CDATA[
@@ -71,8 +68,6 @@
         <br/>
         Sie sind dabei, das Paket CloneDB zu installieren.<br/>
         <br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
 
     ]]></IntroInstall>
@@ -85,8 +80,6 @@
         Ön az CloneDB csomag telepítésére készül.<br/>
         <br/>
         <br/>
-        ((enjoy))<br/>
-        <br/>
 
     ]]></IntroInstall>
     <IntroUpgrade Type="pre" Title="Upgrade Information" Lang="en"><![CDATA[
@@ -97,8 +90,6 @@
         <br/>
         You are about to upgrade the package CloneDB.<br/>
         <br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
 
     ]]></IntroUpgrade>
@@ -111,8 +102,6 @@
         Sie sind dabei, das Paket CloneDB zu aktualisieren.<br/>
         <br/>
         <br/>
-        ((enjoy))<br/>
-        <br/>
 
     ]]></IntroUpgrade>
     <IntroUpgrade Type="pre" Title="Frissítési információk" Lang="hu"><![CDATA[
@@ -123,8 +112,6 @@
         <br/>
         Ön az CloneDB csomag frissítésére készül.<br/>
         <br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
 
     ]]></IntroUpgrade>
