@@ -11,14 +11,14 @@
 Where "TargetDatabaseHost" is the host name or IP address of the target system, "TargetDatabase" is the name of the target database, "TargetDatabaseUser" is the name of the user for the target database, "TargetDatabasePw" is the password of the user, be aware that the field is not masked, and it is stored in plain text, "TargetDatabaseType" is the type of the target database (MySQL, Postgres or oracle).
 
 
-```   
-Notes on Oracle: 
+```
+Notes on Oracle:
 
 On 'CloneDB::TargetDBSettings' for Oracle, you might want to configure extra parameters like:
 
   - TargetDatabaseSID
   - TargetDatabasePort
-  
+ 
   If they are not set, the default values (XE and 1521 respectively) will be used. And please be aware to include the needed settings in the Config.pm file:
 
   - $ENV{ORACLE_HOME}
@@ -66,4 +66,3 @@ List of tables should be skipped, perhaps internal DB tables. Please use lowerca
 ### CloneDB::TargetDBSettings
 
 Settings for connecting with the target database.
-
