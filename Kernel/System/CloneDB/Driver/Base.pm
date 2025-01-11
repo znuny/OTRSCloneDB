@@ -273,6 +273,13 @@ sub DataTransfer {
             );
         }
 
+        my $BatchCounter = 0;
+
+        # Start transaction using SQL
+        $Param{TargetDBObject}->Do(
+            SQL => "BEGIN",
+        ) || die "Could not start transaction: $@";
+
         # get encode object
         my $EncodeObject = $Kernel::OM->Get('Kernel::System::Encode');
 
@@ -385,12 +392,37 @@ sub DataTransfer {
             );
 
             if ( !$Success ) {
+                $Param{TargetDBObject}->Do(
+                    SQL => "ROLLBACK",
+                );
                 print STDERR "Could not insert data: Table: $Table - id:$Row[0]. \n";
                 die @! if !$Param{Force};
             }
 
             $Counter++;
+            $BatchCounter++;
+
+            if ( $BatchCounter >= 1000 ) {
+                # Commit the batch
+                $Param{TargetDBObject}->Do(
+                    SQL => "COMMIT",
+                ) || die "Could not commit transaction: $@";
+                $Self->PrintWithTime("Committed 1000 inserts for table $Table.\n");
+
+                # Start a new transaction
+                $Param{TargetDBObject}->Do(
+                    SQL => "BEGIN",
+                ) || die "Could not start new transaction: $@";
+
+
+
+                $BatchCounter = 0;
+            }
+
+
         }
+
+
 
         # in case dry run do nothing more
         next TABLES if $Param{DryRun};
@@ -407,6 +439,12 @@ sub DataTransfer {
                 Table    => $Table,
             );
         }
+
+        # Commit remaining rows in the last batch
+        $Param{TargetDBObject}->Do(
+            SQL => "COMMIT",
+        ) || die "Could not commit transaction: $@";
+        $Self->PrintWithTime("Committed remaining rows for table $Table.\n");
 
         $Self->PrintWithTime("Finished converting table $Table.\n");
     }
