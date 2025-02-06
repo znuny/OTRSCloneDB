@@ -8,7 +8,7 @@ This add-on clones the application database into another, empty database. It can
 
 **Prerequisites**
 
-- Znuny 7.0
+- Znuny 7.1
 
 **Installation**
 
