@@ -286,6 +286,9 @@ sub DataTransfer {
                 # get column value
                 my $ColumnValue = $Row[$ColumnCounter];
 
+                # skip encoding check if column has binary data (blob)
+                next COLUMNVALUES if $Self->{BlobColumns}->{ lc "$Table.$Column" };
+
                 # verify if the string value have the utf8 flag enabled
                 next COLUMNVALUES if !utf8::is_utf8($ColumnValue);
 

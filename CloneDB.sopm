@@ -129,5 +129,5 @@
         <br/>
 
     ]]></IntroUpgrade>
-    <PackageMerge Name="CloneDB" TargetVersion="6.4.2"/>
+    <PackageMerge Name="OTRSCloneDB" TargetVersion="6.5.0"/>
 </otrs_package>
