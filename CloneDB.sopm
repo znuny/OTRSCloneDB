@@ -29,6 +29,7 @@
     <Filelist>
         <File Permission="660" Location="Kernel/Config/Files/XML/CloneDB.xml"/>
         <File Permission="660" Location="Kernel/Language/bg_CloneDB.pm"/>
+        <File Permission="660" Location="Kernel/Language/cs_CloneDB.pm"/>
         <File Permission="660" Location="Kernel/Language/de_CloneDB.pm"/>
         <File Permission="660" Location="Kernel/Language/es_MX_CloneDB.pm"/>
         <File Permission="660" Location="Kernel/Language/es_CloneDB.pm"/>
