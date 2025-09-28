@@ -105,7 +105,7 @@ sub Run {
         my $DataTransferResult = $CloneDBBackendObject->DataTransfer(
             TargetDBObject => $TargetDBObject,
             DryRun         => $Options{'dry-run'} || '',
-            Force          => $Options{'force'} || '',
+            Force          => $Options{'force'}   || '',
         );
 
         if ( !$DataTransferResult ) {
