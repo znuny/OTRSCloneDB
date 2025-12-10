@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: CloneDB\n"
-"POT-Creation-Date: 2025-04-16 12:24+0000\n"
+"POT-Creation-Date: 2025-12-07 19:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,74 +11,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. SysConfig
-msgid "Customizable system name. If empty, config item 'Home' is being used for display."
+msgid "List of tables should be skipped, perhaps internal DB tables. Please use lowercase."
 msgstr ""
 
 #. SysConfig
-msgid "Defines if Fred is visible or hidden."
+msgid "Log file for replacement of malformed UTF-8 data values."
 msgstr ""
 
 #. SysConfig
-msgid "Defines the height of the Fred console in pixel."
+msgid "Settings for connecting with the target database."
 msgstr ""
 
 #. SysConfig
-msgid "Defines the log path for Freds logs."
+msgid "Specifies which columns should be checked for valid UTF-8 source data."
 msgstr ""
 
 #. SysConfig
-msgid "Defines the opacity of the Fred console, e.g. 0.9 for 10% transparency."
+msgid "This setting specifies which table columns contain blob data as these need special treatment."
 msgstr ""
-
-#. SysConfig
-msgid "Defines the width of the Fred console in percent."
-msgstr ""
-
-#. SysConfig
-msgid "Frontend module registration for the Fred object in the admin area."
-msgstr ""
-
-#. SysConfig
-msgid "Subscribe the output filter at the system."
-msgstr ""
-
-#. SysConfig
-msgid "This option defines the background color for the sytem name box."
-msgstr ""
-
-#. SysConfig
-msgid "Turn on if you want an real-time HTML-checker."
-msgstr ""
-
-#. SysConfig
-msgid "Turn on if you want an real-time SQL statement log function."
-msgstr ""
-
-#. SysConfig
-msgid "Turn on if you want the translation debugger."
-msgstr ""
-
-#. SysConfig
-msgid "Turn on if you want to see the STDERRLog."
-msgstr ""
-
-#. SysConfig
-msgid "Turn on if you want to see the data in the environment of the layout object."
-msgstr ""
-
-#. SysConfig
-msgid "Turn on if you want to see the data in the server side session object."
-msgstr ""
-
-#. SysConfig
-msgid "Turn on if you want to use the Fred console."
-msgstr ""
-
-#. SysConfig
-msgid "Turn on if you want to use the config log mechanism."
-msgstr ""
-
-#. SysConfig
-msgid "Turn on if you want to use the config switch mechanism."
-msgstr ""
-
