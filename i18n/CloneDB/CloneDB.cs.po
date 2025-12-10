@@ -29,3 +29,4 @@ msgstr ""
 #. SysConfig
 msgid "This setting specifies which table columns contain blob data as these need special treatment."
 msgstr ""
+

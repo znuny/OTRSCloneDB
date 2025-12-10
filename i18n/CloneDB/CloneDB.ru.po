@@ -11,12 +11,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. SysConfig
-msgid ""
-"List of tables should be skipped, perhaps internal DB tables. Please use "
-"lowercase."
-msgstr ""
-"Список таблиц которые следует пропускать, возможно, внутренние таблицы БД. "
-"Используйте нижний регистр."
+msgid "List of tables should be skipped, perhaps internal DB tables. Please use lowercase."
+msgstr "Список таблиц которые следует пропускать, возможно, внутренние таблицы БД. Используйте нижний регистр."
 
 #. SysConfig
 msgid "Log file for replacement of malformed UTF-8 data values."
@@ -28,14 +24,9 @@ msgstr "Настройки для соединения с целевой баз�
 
 #. SysConfig
 msgid "Specifies which columns should be checked for valid UTF-8 source data."
-msgstr ""
-"Указывает, какие столбцы следует проверять для допустимых исходных данных "
-"UTF-8."
+msgstr "Указывает, какие столбцы следует проверять для допустимых исходных данных UTF-8."
 
 #. SysConfig
-msgid ""
-"This setting specifies which table columns contain blob data as these need "
-"special treatment."
-msgstr ""
-"Этот параметр указывает, какие столбцы таблицы содержат данные BLOB, так как "
-"они требуют специальной обработки."
+msgid "This setting specifies which table columns contain blob data as these need special treatment."
+msgstr "Этот параметр указывает, какие столбцы таблицы содержат данные BLOB, так как они требуют специальной обработки."
+
