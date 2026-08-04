@@ -21,9 +21,9 @@ sub Data {
     $Self->{Translation}->{'Log file for replacement of malformed UTF-8 data values.'} = 'Naplófájl a helytelenül formázott UTF-8 adatértékek helyettesítéséhez.';
     $Self->{Translation}->{'Settings for connecting with the target database.'} = 'Beállítások a céladatbázissal történő csatlakozáshoz.';
     $Self->{Translation}->{'Specifies which columns should be checked for valid UTF-8 source data.'} =
-        'Meghatározza, hogy mely oszlopokat kell ellenőrizni érvényes UTF-8 forrásadatokhoz.';
+        'Meghatározza, hogy mely oszlopokat kell ellenőrizni az érvényes UTF-8 forrásadatokért.';
     $Self->{Translation}->{'This setting specifies which table columns contain blob data as these need special treatment.'} =
-        'Ez a beállítás határozza meg, hogy mely táblaoszlopok tartalmaznak blob adatokat, mivel ezek különleges bánásmódot igénylenek.';
+        'Ez a beállítás határozza meg, hogy mely táblaoszlopok tartalmaznak bináris adatokat, mivel ezek különleges bánásmódot igényelnek.';
 
 
     push @{ $Self->{JavaScriptStrings} //= [] }, (
