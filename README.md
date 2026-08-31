@@ -6,7 +6,7 @@
     </picture>
   </a>
 
-  ![Build status](https://badge.proxy.znuny.com/OTRSCloneDB/rel-7_3)
+  ![Build status](https://badge.proxy.znuny.com/CloneDB/rel-7_3)
 </div>
 
 CloneDB
