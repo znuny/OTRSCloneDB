@@ -8,6 +8,7 @@
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
     <Description Lang="en">Clones a Znuny database into an empty target database.</Description>
     <Description Lang="de">Klont eine Znuny-Datenbank in eine leere Ziel-Datenbank.</Description>
+    <Description Lang="hu">Leklónozza a Znuny adatbázisát egy üres céladatbázisba.</Description>
     <!--
         Note for module porting: please verify that the mysql UTF8 replacement in Base.pm
         is still needed in future versions of Znuny.
@@ -89,7 +90,7 @@
         <strong>ÜDVÖZÖLJÜK</strong>
         <br/>
         <br/>
-        Ön az CloneDB csomag telepítésére készül.<br/>
+        Ön a CloneDB csomag telepítésére készül.<br/>
         <br/>
         <br/>
 
@@ -122,7 +123,7 @@
         <strong>ÜDVÖZÖLJÜK</strong>
         <br/>
         <br/>
-        Ön az CloneDB csomag frissítésére készül.<br/>
+        Ön a CloneDB csomag frissítésére készül.<br/>
         <br/>
         <br/>
 
